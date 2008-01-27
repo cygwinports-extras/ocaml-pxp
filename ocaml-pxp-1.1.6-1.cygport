@@ -1,0 +1,16 @@
+ORIG_PN="pxp"
+
+inherit ocaml
+
+DESCRIPTION="OCaml polymorphic XML parser"
+HOMEPAGE="http://www.ocaml-programming.de/programming/pxp.html"
+SRC_URI="http://www.ocaml-programming.de/packages/${ORIG_PN}-${PV}.tar.gz"
+
+DIFF_EXCLUDES="examples"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	./configure || error
+	cygmake -j1 all opt
+}

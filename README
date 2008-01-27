@@ -1,0 +1,129 @@
+ocaml-pxp
+------------------------------------------
+PXP is a validating parser for XML-1.0 which has been written entirely in
+Objective Caml.
+
+PXP means 'Polymorphic XML parser' and emphasizes its most useful property:
+that the API is polymorphic and can be configured such that different objects
+are used to store different types of elements.
+
+Runtime requirements:
+  ocaml-3.10.0-1
+  ocaml-netstring-2.2.9-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-findlib-1.2.1-1
+
+Canonical website:
+  http://www.ocaml-programming.de/programming/pxp.html
+
+Canonical download:
+  http://www.ocaml-programming.de/packages/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-pxp-1.1.6-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-pxp-1.1.6-X.cygport all
+
+This will create:
+  /usr/src/ocaml-pxp-1.1.6-X-src.tar.bz2
+  /usr/src/ocaml-pxp-1.1.6-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/pxp-engine/META
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_aux.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_codewriter.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_codewriter.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_dfa.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_dfa.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_document.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_document.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_dtd.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_dtd.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_engine.a
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_engine.cma
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_engine.cmxa
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_entity.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lexer_types.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lexer_types.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lexers.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lexers.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lexing.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lexing.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lib.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_lib.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_marshal.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_marshal.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_reader.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_reader.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_top.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_top.cmo
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_top.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_types.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_types.mli
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_yacc.cmi
+  /usr/lib/ocaml/3.10/pxp-engine/pxp_yacc.mli
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/META
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_aux_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_content_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_content_string_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_declaration_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_document_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_document_type_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_dtd_string_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_iso88591.a
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_iso88591.cma
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_iso88591.cmxa
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_link_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_link_iso88591.cmo
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_link_iso88591.cmx
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_link_iso88591.o
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_misc_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_name_string_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-iso88591/pxp_lex_within_tag_iso88591.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/META
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_aux_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_content_string_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_content_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_declaration_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_document_type_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_document_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_dtd_string_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_link_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_link_utf8.cmo
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_link_utf8.cmx
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_link_utf8.o
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_misc_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_name_string_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_utf8.a
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_utf8.cma
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_utf8.cmxa
+  /usr/lib/ocaml/3.10/pxp-lex-utf8/pxp_lex_within_tag_utf8.cmi
+  /usr/lib/ocaml/3.10/pxp/META
+  /usr/share/doc/ocaml-pxp-1.1.6/INSTALL
+  /usr/share/doc/ocaml-pxp-1.1.6/LICENSE
+  /usr/share/doc/ocaml-pxp-1.1.6/README
+
+------------------
+
+Port Notes:
+
+----- version 1.1.6-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
