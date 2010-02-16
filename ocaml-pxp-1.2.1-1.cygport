@@ -3,8 +3,8 @@ ORIG_PN="pxp"
 inherit ocaml
 
 DESCRIPTION="OCaml polymorphic XML parser"
-HOMEPAGE="http://www.ocaml-programming.de/programming/pxp.html"
-SRC_URI="http://www.ocaml-programming.de/packages/${ORIG_PN}-${PV}.tar.gz"
+HOMEPAGE="http://projects.camlcity.org/projects/pxp.html"
+SRC_URI="http://download.camlcity.org/download/${ORIG_PN}-${PV}.tar.gz"
 
 DIFF_EXCLUDES="examples"
 
