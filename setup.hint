@@ -1,5 +1,5 @@
 category: OCaml
-requires: ocaml ocaml-netstring
+requires: ocaml ocaml-netstring ocaml-ulex
 sdesc: "OCaml polymorphic XML parser"
 ldesc: "PXP is a validating parser for XML-1.0 which has been written 
 entirely in Objective Caml.

@@ -8,18 +8,19 @@ that the API is polymorphic and can be configured such that different objects
 are used to store different types of elements.
 
 Runtime requirements:
-  ocaml-3.11.2-1
-  ocaml-netstring-2.2.9-3
+  ocaml-3.12.0-4
+  ocaml-netstring-3.0.3-1
+  ocaml-ulex-1.1-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.7.1-1
-  binutils-2.19.51-1
-  cygport-0.9.80-1
-  gcc4-core-4.3.4-3
+  cygwin-1.7.7-1
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  gcc4-core-4.5.0-1
   make-3.81-2
-  ocaml-camlp4-3.11.2-1
-  ocaml-findlib-1.2.5-1
+  ocaml-camlp4-3.12.0-4
+  ocaml-findlib-1.2.6-1
 
 Canonical website:
   http://projects.camlcity.org/projects/pxp.html
@@ -43,6 +44,9 @@ This will create:
 -------------------------------------------
 
 Port Notes:
+
+----- version 1.2.1-2 -----
+Rebuilt for OCaml 3.12.0.
 
 ----- version 1.2.1-1 -----
 Initial release for Cygwin 1.7.
